@@ -1,148 +1,150 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
   <meta charset="UTF-8">
-  <title>⚽ Pasión por el Fútbol</title>
+  <title>Lliga EA Sports</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
-      background: #f0f2f5;
     }
 
-    header {
-      background: linear-gradient(90deg, #004d7a, #008793);
+    header, footer {
+      background-color: #003366;
       color: white;
-      padding: 30px 0;
       text-align: center;
+      padding: 20px 0;
     }
 
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
+    main {
+      padding: 20px;
     }
 
-    nav {
-      background: #00334e;
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .equip, .jugador, .anunci {
+      display: inline-block;
+      margin: 10px;
+      text-align: center;
+      vertical-align: top;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .equip img, .anunci img {
+      width: 100px;
+      height: auto;
+    }
+
+    .jugador img {
+      width: 150px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .jugador, .anunci {
+      padding: 10px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .jugador:hover, .anunci:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #999;
+    }
+
+    th, td {
       padding: 10px;
       text-align: center;
     }
 
-    nav a {
-      color: white;
-      margin: 0 15px;
+    a {
       text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 30px;
-    }
-
-    h2 {
-      color: #00334e;
-      margin-bottom: 20px;
-    }
-
-    .equipos, .jugadores {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 15px;
-      text-align: center;
-      width: 160px;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    .card img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      background: #00334e;
-      color: white;
-      text-align: center;
-      padding: 15px;
+      color: #003366;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>⚽ Pasión por el Fútbol</h1>
-  <p>Jugadores, equipos y emoción sin límites</p>
+  <h1>⚽ Web de la Lliga EA Sports ⚽</h1>
 </header>
 
-<nav>
-  <a href="#equipos">Equipos</a>
-  <a href="#jugadores">Jugadores</a>
-</nav>
+<main>
 
-<section id="equipos">
-  <h2>🏟️ Equipos de Élite</h2>
-  <div class="equipos">
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Real Madrid">
-      <p>Real Madrid</p>
-    </div>
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Barcelona">
-      <p>FC Barcelona</p>
-    </div>
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/7/75/Atletico_Madrid_2017_logo.svg" alt="Atlético">
-      <p>Atlético de Madrid</p>
-    </div>
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/8/86/Sevilla_FC_logo.svg" alt="Sevilla">
-      <p>Sevilla FC</p>
-    </div>
-  </div>
-</section>
+  <section>
+    <h2>Equips de la Lliga</h2>
+    <!-- Afegeix més si vols -->
+    <div class="equip"><img src="https://upload.wikimedia.org/wikipedia/en/5/56/FC_Barcelona_%28crest%29.svg"><p>FC Barcelona</p></div>
+    <div class="equip"><img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"><p>Real Madrid</p></div>
+    <div class="equip"><img src="https://upload.wikimedia.org/wikipedia/en/7/75/Atletico_Madrid_2017_logo.svg"><p>Atlètic de Madrid</p></div>
+    <div class="equip"><img src="https://upload.wikimedia.org/wikipedia/en/8/86/Sevilla_FC_logo.svg"><p>Sevilla FC</p></div>
+    <div class="equip"><img src="https://upload.wikimedia.org/wikipedia/en/7/70/Valencia_CF_logo.svg"><p>València CF</p></div>
+    <div class="equip"><img src="https://upload.wikimedia.org/wikipedia/en/7/7f/Real_Betis_logo.svg"><p>Real Betis</p></div>
+    <div class="equip"><img src="https://upload.wikimedia.org/wikipedia/en/9/98/Villarreal_CF_logo.svg"><p>Villarreal CF</p></div>
+    <div class="equip"><img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Real_Sociedad_logo.svg"><p>Real Sociedad</p></div>
+    <div class="equip"><img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Celta_de_Vigo_logo.svg"><p>Celta</p></div>
+    <div class="equip"><img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Rayo_Vallecano_logo.svg"><p>Rayo Vallecano</p></div>
+    <div class="equip"><img src="https://upload.wikimedia.org/wikipedia/en/d/d4/RCD_Mallorca_logo.svg"><p>RCD Mallorca</p></div>
+    <div class="equip"><img src="https://upload.wikimedia.org/wikipedia/en/9/98/Athletic_Club_Bilbao_logo.svg"><p>Athletic Club</p></div>
+  </section>
 
-<section id="jugadores">
-  <h2>⭐ Jugadores Destacados</h2>
-  <div class="jugadores">
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Vinicius_Jr_2023.jpg" alt="Vinicius Jr">
-      <p>Vinícius Jr (Real Madrid)</p>
+  <section>
+    <h2>Jugadors Destacats</h2>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Lamine_Yamal_2024.jpg"><p>Lamine Yamal (Barça)</p></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Vinicius_Jr_2023.jpg"><p>Vinícius Jr. (Madrid)</p></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Antoine_Griezmann_2018.jpg"><p>Griezmann (Atlètic)</p></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Isco_2018.jpg"><p>Isco (Betis)</p></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Mikel_Oyarzabal_2018.jpg"><p>Oyarzabal (Sociedad)</p></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Jes%C3%BAs_Navas_2020.jpg"><p>Jesús Navas (Sevilla)</p></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Iago_Aspas_2019.jpg"><p>Iago Aspas (Celta)</p></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Isi_Palazon_2022.jpg"><p>Isi Palazón (Rayo)</p></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Muriqi_2022.jpg"><p>Muriqi (Mallorca)</p></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Ayoze_Perez_2019.jpg"><p>Ayoze Pérez (Betis)</p></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Be%C3%B1at_Prados.jpg"><p>Beñat Prados (Athletic)</p></div>
+  </section>
+
+  <section>
+    <h2>Publicitat - Botes de Futbol Sala</h2>
+    <div class="anunci">
+      <img src="https://m.media-amazon.com/images/I/61vTYuY2K9L._AC_UX575_.jpg" alt="Nike Zoom Sala">
+      <p><strong>Nike Zoom Mercurial Sala</strong><br><a href="#">Compra ara</a></p>
     </div>
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Lamine_Yamal_2024.jpg" alt="Lamine Yamal">
-      <p>Lamine Yamal (Barcelona)</p>
+    <div class="anunci">
+      <img src="https://m.media-amazon.com/images/I/61dv1o-5i6L._AC_UY500_.jpg" alt="Adidas Sala">
+      <p><strong>Adidas Predator Accuracy</strong><br><a href="#">Compra ara</a></p>
     </div>
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Antoine_Griezmann_2018.jpg" alt="Griezmann">
-      <p>Griezmann (Atlético)</p>
+    <div class="anunci">
+      <img src="https://m.media-amazon.com/images/I/71Y4DgDYHaL._AC_UX500_.jpg" alt="Joma Top Flex">
+      <p><strong>Joma Top Flex</strong><br><a href="#">Compra ara</a></p>
     </div>
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Iago_Aspas_2019.jpg" alt="Iago Aspas">
-      <p>Iago Aspas (Celta)</p>
-    </div>
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Isi_Palazon_2022.jpg" alt="Isi Palazón">
-      <p>Isi Palazón (Rayo)</p>
-    </div>
-  </div>
-</section>
+  </section>
+
+</main>
 
 <footer>
-  <p>&copy; 2025 Pasión por el Fútbol - Creado por fans para Arnau Vila</p>
+  <p>&copy; 2025 Lliga EA Sports - Web feta per aficionats del futbol</p>
 </footer>
 
 </body>
